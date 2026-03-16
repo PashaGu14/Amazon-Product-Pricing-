@@ -9,8 +9,7 @@ Using Python and SQL, the analysis evaluates patterns in pricing, category-level
 The goal of the project is to translate marketplace data into clear, decision-relevant insights that can inform pricing strategy, product positioning, and category management.
 
 **Full Analysis Report**
-`amazon_analysis_report.html`
-
+`Reports/Amazon product pricing.html`
 
 # Key Business Questions
 
@@ -70,7 +69,35 @@ Results suggest that pricing variables alone provide **limited explanatory power
 | Jupyter Notebook     | Analysis workflow                |
 
 ---
+## How to Run
 
+### 1. Clone the repository
+
+git clone https://github.com/PashaGu14/Amazon-product-pricing-analysis-.git
+cd Amazon-product-pricing-analysis
+
+### 2. Set up the Python environment
+
+- python -m venv venv
+- source venv/bin/activate   
+- On Windows use `venv\Scripts\activate`
+- pip install -r requirements.txt
+
+### 3. Prepare the data
+
+* Place amazon.csv in the data/ folder.
+
+* If using SQL, load the CSV into SQLite or your database of choice.
+
+### 4. Run the notebook
+
+* Open notebooks/amazon_product_pricing.ipynb in Jupyter Notebook or VS Code.
+
+* Execute cells sequentially to reproduce the analysis and visualizations.
+
+### 5. View the HTML report
+
+Open `Reports/Amazon product pricing.html` in any browser for the full formatted analysis.
 # Repository Structure
 
 ```
@@ -106,14 +133,8 @@ Amazon-product-pricing-analysis
 * Data visualization
 * Translating analysis into business insights
 
----
-
 # Data Source
-
 Dataset:
 Amazon Sales Dataset
 [https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset](https://www.kaggle.com/datasets/karkavelrajaj/amazon-sales-dataset)
 
-
-
-If you want, I can also show you **three small additions that make data science READMEs stand out to recruiters** (most GitHub portfolios miss them, but they dramatically improve how professional the project looks).
